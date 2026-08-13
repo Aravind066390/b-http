@@ -22,7 +22,7 @@ int handle_client(int server_fd)
         ssize_t received;
 
         char path[PATH_LIMIT];
-        char full_path[PATH_LIMIT + strnlen(parameters.webroot,100)];
+        char full_path[PATH_LIMIT + strlen(parameters.webroot)];
 
         int status_code;
 
