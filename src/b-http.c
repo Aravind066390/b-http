@@ -64,6 +64,7 @@ int main(void)
     if (bind(server_fd, (struct sockaddr*)&addr,sizeof(addr)) < 0)
     {
         fprintf(stderr,"Could not bind port.\n");
+       ///Modified
         close(server_fd);
         return 1;
     }
